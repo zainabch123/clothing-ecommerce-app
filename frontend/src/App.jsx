@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+    <div className="container">
+      <header className="header">
+        <div className="logo">H&M</div>
+        <a href="left-menu" style={{ color: "black" }}>
+          Menu Button
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        <nav className="nav-bar">
+          <a href="#" style={{ color: "black" }}>
+            Women
+          </a>
+          <a href="#" style={{ color: "black" }}>
+            Men
+          </a>
+          <a href="#" style={{ color: "black" }}>
+            Kids
+          </a>
+          <a href="#" style={{ color: "black" }}>
+            Home
+          </a>
+        </nav>
+        <div className="user-panel">
+          <a href="#" style={{ color: "black" }}>
+            Search
+          </a>
+          <a href="#" style={{ color: "black" }}>
+            Profile
+          </a>
+          <a href="#" style={{ color: "black" }}>
+            Favourites
+          </a>
+          <a href="#" style={{ color: "black" }}>
+            Shopping Bag
+          </a>
+        </div>
+      </header>
+      <main className="overflow-container">
+        <section className="image-carousel">Image Carousel</section>
+        <section className="featured-items">Featured Items</section>
+        <footer className="footer">Footer</footer>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
