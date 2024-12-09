@@ -24,6 +24,9 @@ function App() {
         </nav>
         <div className="user-panel">
           <a href="#" style={{ color: "black" }}>
+            Log In
+          </a>
+          <a href="#" style={{ color: "black" }}>
             Search
           </a>
           <a href="#" style={{ color: "black" }}>
