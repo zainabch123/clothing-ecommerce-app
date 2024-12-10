@@ -1,22 +1,17 @@
-//Include the express library
-const express = require("express");
-//Include the morgan middleware
-const morgan = require("morgan");
-//Include the cors middleware
-const cors = require("cors");
-const prisma = require("./database");
-const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const express = require('express');
+const cors = require('cors');
+const morgan = require('morgan');
+require("dotenv").config();
 
-//Create a new express application
 const app = express();
+app.disable('x-powered-by');
 
-//Tell express we want to use the morgan library
-app.use(morgan("dev"));
-//Tell express we want to use the cors library
 app.use(cors());
-//Tell express to parse JSON in the request body
+app.use(morgan('dev'));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+const usersRouter = require("./routes/user")
 
 //Create endpoints/routes here:
 app.get("/", function (req, res) {
@@ -25,6 +20,9 @@ app.get("/", function (req, res) {
     message: "Hello world!",
   });
 });
+
+app.use("/users", usersRouter);
+
 
 //Export our app so other files can run it
 module.exports = app;
