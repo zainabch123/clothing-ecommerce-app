@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <div className="logo">Hello</div>
+        <div className="logo">H&M</div>
         <a href="left-menu" style={{ color: "black" }}>
           Menu Button
         </a>
