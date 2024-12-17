@@ -10,10 +10,9 @@ const registerUser = async (req, res) => {
   const hashedPassword = await bcrypt.hash(password, 10);
   try {
     const newUser = await registerUserDb(username, hashedPassword);
-    const token = jwt.sign({id: newUser.id}, secret)
+    const token = jwt.sign({ id: newUser.id }, secret);
 
-    return res.status(201).json({ user: newUser, token: token});
-    
+    return res.status(201).json({ user: newUser, token: token });
   } catch (error) {
     console.log("Error", error);
   }
