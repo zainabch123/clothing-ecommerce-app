@@ -10,7 +10,16 @@ const registerUserDb = async(username, hashedPassword) => {
 
 };
 
+const loginUserDb = async(username) => {
+    return await prisma.user.findUnique({
+        where: {
+            username: username
+        }
+    });
+}
+
 
 module.exports = {
     registerUserDb,
+    loginUserDb,
 }
