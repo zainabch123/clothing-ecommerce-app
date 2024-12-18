@@ -11,6 +11,7 @@
 }
 
 .header {
+  position: relative;
   background-color: white;
   border: 1px solid black;
   display: grid;
@@ -34,4 +35,11 @@
 .image-carousel {
   background-color: cadetblue;
   height: 100vh;
+}
+
+.login-portal {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  right: 10px;
 }

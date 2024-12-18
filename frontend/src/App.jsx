@@ -1,6 +1,12 @@
 import { useState } from "react";
 
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleOnClickLogin = (event) => {
+    setIsVisible(!isVisible);
+  }
+
   return (
     <div className="container">
       <header className="header">
@@ -23,7 +29,7 @@ function App() {
           </a>
         </nav>
         <div className="user-panel">
-          <a href="#" style={{ color: "black" }}>
+          <a href="#" style={{ color: "black" }} onClick={handleOnClickLogin}>
             Log In
           </a>
           <a href="#" style={{ color: "black" }}>
@@ -39,6 +45,32 @@ function App() {
             Shopping Bag
           </a>
         </div>
+
+        {isVisible && (
+          <div className="login-portal">
+            <form>
+              <label htmlFor="email">
+                Email
+                <input
+                  type="email"
+                  placeholder="email"
+                  id="email"
+                  name="email"
+                />
+              </label>
+              <label htmlFor="password">
+                Password
+                <input
+                  type="password"
+                  placeholder="password"
+                  id="password"
+                  name="password"
+                />
+              </label>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        )}
       </header>
       <main className="overflow-container">
         <section className="image-carousel">Image Carousel</section>
