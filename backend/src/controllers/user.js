@@ -19,7 +19,7 @@ const registerUser = async (req, res) => {
 };
 
 const loginUser = async (req, res) => {
-  const {username, password} = req.body;
+  const { username, password } = req.body;
 
   try {
     const foundUser = await loginUserDb(username);
@@ -27,16 +27,16 @@ const loginUser = async (req, res) => {
     const validPassword = await bcrypt.compare(password, foundUser.password);
 
     if (!validPassword) {
-      res.status(401).json({ Error: "Invalid password"})
-    };
+      res.status(401).json({ Error: "Invalid password" });
+    }
 
-    const token = jwt.sign({id: foundUser.id}, secret);
+    const token = jwt.sign({ id: foundUser.id }, secret);
 
-    return res.status(200).json({user: foundUser,   token});
+    return res.status(200).json({ user: foundUser, token });
   } catch (error) {
     console.log("Error", error);
   }
-}
+};
 
 module.exports = {
   registerUser,
