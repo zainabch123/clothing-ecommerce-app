@@ -5,7 +5,7 @@ function App() {
 
   const handleOnClickLogin = (event) => {
     setIsVisible(!isVisible);
-  }
+  };
 
   return (
     <div className="container">
