@@ -65,19 +65,22 @@
 .new-in-section,
 .trending-section,
 .recently-viewed-section {
-  position: relative;
   text-align: center;
   justify-items: center;
   padding: 20px;
+}
+.content-wrapper {
+    position: relative;
+    display: grid;
+max-width: 1400px;
 }
 
 .new-in-carousel-container,
 .trending-carousel-container,
 .recently-viewed-carousel-container {
-  display: flex;
+  display: grid;
   align-items: center;
-  width: 100%;
-  max-width: 1300px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
   overflow: hidden;
@@ -93,9 +96,7 @@
   height: 400px;
 }
 
-.new-in-carousel-item,
-.trending-carousel-item,
-.recently-viewed-carousel-item {
+.carousel-item {
   width: 300px;
   flex-shrink: 0 0 auto;
   border: 1px solid #ddd;
@@ -110,9 +111,9 @@
 }
 
 #left-button {
-  left: 250px;
+  left: 0px;
 }
 
 #right-button {
-  right: 250px;
+  right: 0px;
 }
