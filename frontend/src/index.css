@@ -63,26 +63,30 @@
 }
 
 .new-in-section,
-.trending-section {
+.trending-section,
+.recently-viewed-section {
+  position: relative;
   text-align: center;
   justify-items: center;
   padding: 20px;
 }
 
 .new-in-carousel-container,
-.trending-carousel-container {
-  position: relative;
+.trending-carousel-container,
+.recently-viewed-carousel-container {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px;
   overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
 .new-in-carousel,
-.trending-carousel {
+.trending-carousel,
+.recently-viewed-carousel {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
@@ -90,23 +94,25 @@
 }
 
 .new-in-carousel-item,
-.trending-carousel-item {
-  width: 300px; 
+.trending-carousel-item,
+.recently-viewed-carousel-item {
+  width: 300px;
   flex-shrink: 0 0 auto;
   border: 1px solid #ddd;
   padding: 20px;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
 }
 .carousel-button {
   position: absolute;
   z-index: 10;
-  height: 100%;
+  height: 240px;
+  width: 35px;
 }
 
-.left {
-  left: 0px;
+#left-button {
+  left: 250px;
 }
 
-.right {
-  right: 0px;
+#right-button {
+  right: 250px;
 }
