@@ -18,7 +18,7 @@ const usersRouter = require("./routes/user");
 app.get("/", function (req, res) {
   // res.send("Hello world")
   res.json({
-    message: "Hello world!",
+    message: "Hello World!",
   });
 });
 
