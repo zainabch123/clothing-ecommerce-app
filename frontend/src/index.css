@@ -5,7 +5,7 @@
 }
 
 .container {
-  height: 100vh; 
+  height: 100vh;
   display: grid;
   grid-template-rows: 70px 40px 1fr;
 }
@@ -32,7 +32,6 @@
   border: 1px solid black;
 }
 
-
 .login-portal {
   position: absolute;
   z-index: 10;
@@ -47,16 +46,14 @@
   align-content: center;
 }
 
-.nav-bar a{
+.nav-bar a {
   display: flex;
   justify-content: center;
 }
 
-
 .hero-image-carousel {
   max-height: 100vh;
 }
-
 
 .hero-image-carousel img {
   object-fit: cover;
@@ -65,58 +62,51 @@
   max-height: 657px;
 }
 
-
-
-.new-in-section, .trending-section {
+.new-in-section,
+.trending-section {
   text-align: center;
   justify-items: center;
   padding: 20px;
 }
 
-.new-in-carousel-container {
+.new-in-carousel-container,
+.trending-carousel-container {
   position: relative;
   display: flex;
-  overflow: hidden;
-  justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
   width: 100%;
-  max-width: 1400px;
-  gap: 20px;
+  max-width: 1350px;
+  margin: 0 auto;
   padding: 20px 40px;
+  overflow: hidden;
 }
 
-.new-in-carousel {
+.new-in-carousel,
+.trending-carousel {
   display: flex;
+  justify-content: flex-start;
   gap: 20px;
-
+  height: 400px;
 }
 
-.new-in-item, .trending-item {
-  border: 1px solid black;
+.new-in-carousel-item,
+.trending-carousel-item {
+  width: 300px; 
+  flex-shrink: 0 0 auto;
+  border: 1px solid #ddd;
   padding: 20px;
-  width: 300px;
+  background-color: #f4f4f4; 
 }
-.carousel-left-button {
+.carousel-button {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
+  height: 100%;
+}
+
+.left {
   left: 0px;
 }
 
-.carousel-right-button {
-  position: absolute;
-  z-index: 10;
+.right {
   right: 0px;
 }
-
-
-/* .new-in-products-carousel, .trending-products-carousel {
-  justify-content: center;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 100px));
-  gap: 20px;  
-  padding: 20px;
-} */
-
-

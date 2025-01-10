@@ -115,46 +115,49 @@ function App() {
         <section className="new-in-section">
           <h1>New In</h1>
           <div className="new-in-carousel-container">
-            <button className="carousel-left-button">Left</button>
+            <button className="carousel-button left">Left</button>
             <div className="new-in-carousel">
-              <div className="new-in-item">Item 1</div>
-              <div className="new-in-item">Item 2</div>
-              <div className="new-in-item">Item 3</div>
-              <div className="new-in-item">Item 4</div>
-              <div className="new-in-item">Item 5</div>
-              <div className="new-in-item">Item 6</div>
+              <div className="new-in-carousel-item">Item 1</div>
+              <div className="new-in-carousel-item">Item 2</div>
+              <div className="new-in-carousel-item">Item 3</div>
+              <div className="new-in-carousel-item">Item 4</div>
+              <div className="new-in-carousel-item">Item 5</div>
+              <div className="new-in-carousel-item">Item 6</div>
             </div>
-            <button className="carousel-right-button">Right</button>
+            <button className="carousel-button right">Right</button>
           </div>
         </section>
         <section className="trending-section">
           <h1>Trending</h1>
           <div className="trending-carousel-container">
-            <button className="carousel-left-button">Left</button>
+            <button className="carousel-button left">Left</button>
             <div className="trending-carousel">
-              <div className="trending-item">Item 1</div>
-              <div className="trending-item">Item 2</div>
-              <div className="trending-item">Item 3</div>
-              <div className="trending-item">Item 4</div>
-              <div className="trending-item">Item 5</div>
-              <div className="trending-item">Item 6</div>
+              <div className="trending-carousel-item">
+                <div className="item-img"></div>
+                <div ck></div>
+              </div>
+              <div className="trending-carousel-item">Item 2</div>
+              <div className="trending-carousel-item">Item 3</div>
+              <div className="trending-carousel-item">Item 4</div>
+              <div className="trending-carousel-item">Item 5</div>
+              <div className="trending-carousel-item">Item 6</div>
             </div>
-            <button className="carousel-right-button">Right</button>
+            <button className="carousel-button right">Right</button>
           </div>
         </section>
         <section className="new-in-section">
-          <h1>New In</h1>
+          <h1>Recently Viewed</h1>
           <div className="new-in-carousel-container">
-            <button className="carousel-left-button">Left</button>
+            <button className="carousel-button left">Left</button>
             <div className="new-in-carousel">
-              <div className="new-in-item">Item 1</div>
-              <div className="new-in-item">Item 2</div>
-              <div className="new-in-item">Item 3</div>
-              <div className="new-in-item">Item 4</div>
-              <div className="new-in-item">Item 5</div>
-              <div className="new-in-item">Item 6</div>
+              <div className="new-in-carousel-item">Item 1</div>
+              <div className="new-in-carousel-item">Item 2</div>
+              <div className="new-in-carousel-item">Item 3</div>
+              <div className="new-in-carousel-item">Item 4</div>
+              <div className="new-in-carousel-item">Item 5</div>
+              <div className="new-in-carousel-item">Item 6</div>
             </div>
-            <button className="carousel-right-button">Right</button>
+            <button className="carousel-button right">Right</button>
           </div>
         </section>
         <footer className="footer">Footer</footer>
