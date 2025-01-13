@@ -1,5 +1,17 @@
 import { useState, useRef } from "react";
 import heroImg from "./assets/heroImg9.jpg";
+import item1 from "./assets/item3.jpg";
+import item2 from "./assets/item5.jpg";
+import item3 from "./assets/item6.jpg";
+import item4 from "./assets/item7.jpg";
+import item5 from "./assets/item8.jpg";
+import item6 from "./assets/item9.jpg";
+import item7 from "./assets/item10.jpg";
+import item8 from "./assets/item11.jpg";
+import item9 from "./assets/item12.jpg";
+
+
+
 
 function App() {
   const newInCarouselRef = useRef(null);
@@ -133,27 +145,39 @@ function App() {
               </button>
               <div className="new-in-carousel">
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item1} />
+                  </div>
                   <div className="carousel-item-info">Item 1</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item2} />
+                  </div>
                   <div className="carousel-item-info">Item 2</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item3} />
+                  </div>
                   <div className="carousel-item-info">Item 3</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item5} />
+                  </div>
                   <div className="carousel-item-info">Item 4</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item2} />
+                  </div>
                   <div className="carousel-item-info">Item 5</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item6} />
+                  </div>
                   <div className="carousel-item-info">Item 6</div>
                 </div>
               </div>
@@ -184,27 +208,39 @@ function App() {
               </button>
               <div className="trending-carousel">
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item3} />
+                  </div>
                   <div className="carousel-item-info">Item 1</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item6} />
+                  </div>
                   <div className="carousel-item-info">Item 2</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item2} />
+                  </div>
                   <div className="carousel-item-info">Item 3</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item1} />
+                  </div>
                   <div className="carousel-item-info">Item 4</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item3} />
+                  </div>
                   <div className="carousel-item-info">Item 5</div>
                 </div>
                 <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
+                  <div className="carousel-item-img">
+                    <img src={item5} />
+                  </div>
                   <div className="carousel-item-info">Item 6</div>
                 </div>
               </div>
