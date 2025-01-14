@@ -9,7 +9,8 @@ import item6 from "./assets/item9.jpg";
 import item7 from "./assets/item10.jpg";
 import item8 from "./assets/item11.jpg";
 import item9 from "./assets/item12.jpg";
-
+import item10 from "./assets/item13.jpg";
+import item11 from "./assets/item14.jpg";
 
 
 
@@ -24,7 +25,7 @@ function App() {
   };
 
   const handleCarouselNav = (carouselRef, direction) => {
-    const scrollAmount = direction === "left" ? -800 : 800;
+    const scrollAmount = direction === "left" ? -1000 : 1000;
     carouselRef.current.scrollLeft += scrollAmount;
   }
 
