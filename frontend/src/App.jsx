@@ -25,7 +25,7 @@ function App() {
   };
 
   const handleCarouselNav = (carouselRef, direction) => {
-    const scrollAmount = direction === "left" ? -1000 : 1000;
+    const scrollAmount = direction === "left" ? -400 : 400;
     carouselRef.current.scrollLeft += scrollAmount;
   }
 
@@ -185,6 +185,67 @@ function App() {
           <img className="hero-image" src={heroImg} />
         </section>
         <section className="new-in-section">
+          <h1>New In</h1>
+
+          <div className="new-in-carousel">
+            <button
+              className="carousel-button"
+              id="left-button"
+              onClick={() => handleCarouselNav(newInCarouselRef, "left")}
+            >
+              Left
+            </button>
+            <div
+              className="new-in-carousel-card-container"
+              ref={newInCarouselRef}
+            >
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item1} />
+                </div>
+                <div className="carousel-card-info">Item 1</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item2} />
+                </div>
+                <div className="carousel-card-info">Item 2</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item3} />
+                </div>
+                <div className="carousel-card-info">Item 3</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item5} />
+                </div>
+                <div className="carousel-card-info">Item 4</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item2} />
+                </div>
+                <div className="carousel-card-info">Item 5</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item6} />
+                </div>
+                <div className="carousel-card-info">Item 6</div>
+              </div>
+            </div>
+            <button
+              className="carousel-button"
+              id="right-button"
+              onClick={() => handleCarouselNav(newInCarouselRef, "right")}
+            >
+              Right
+            </button>
+          </div>
+        </section>
+        {/* <section className="new-in-section">
           <div className="content-wrapper">
             <h1>New In</h1>
             <div className="new-in-carousel-container" ref={newInCarouselRef}>
@@ -359,7 +420,7 @@ function App() {
               </button>
             </div>
           </div>
-        </section>
+        </section> */}
         <footer className="footer">Footer</footer>
       </main>
     </div>
