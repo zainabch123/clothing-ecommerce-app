@@ -1,1 +1,1 @@
-# skincare-ecommerce-app
+# clothing-ecommerce-app
