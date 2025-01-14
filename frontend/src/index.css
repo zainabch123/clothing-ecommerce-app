@@ -15,7 +15,7 @@
   /* background-color: #f6f4f0; */
   background-color: rgb(235, 230, 220);
   display: grid;
-  grid-template-columns: 170px 1fr 250px;
+  grid-template-columns: 200px 1fr 250px;
   justify-items: center;
   align-items: center;
   align-content: center;
@@ -39,6 +39,21 @@
   right: 10px;
 }
 
+.user-panel {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.user-panel li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.language-options-menu {
+  padding: 10px;
+}
+
 .nav-bar {
   display: grid;
   grid-template-columns: repeat(5, 100px);
@@ -47,9 +62,9 @@
 }
 
 .nav-bar a {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
+
 
 .hero-image-carousel {
   max-height: 100vh;
