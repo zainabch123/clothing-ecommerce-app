@@ -245,182 +245,129 @@ function App() {
             </button>
           </div>
         </section>
-        {/* <section className="new-in-section">
-          <div className="content-wrapper">
-            <h1>New In</h1>
-            <div className="new-in-carousel-container" ref={newInCarouselRef}>
-              <button
-                className="carousel-button"
-                id="left-button"
-                onClick={() => handleCarouselNav(newInCarouselRef, "left")}
-              >
-                Left
-              </button>
-              <div className="new-in-carousel">
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item1} />
-                  </div>
-                  <div className="carousel-item-info">Item 1</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item2} />
-                  </div>
-                  <div className="carousel-item-info">Item 2</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item3} />
-                  </div>
-                  <div className="carousel-item-info">Item 3</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item5} />
-                  </div>
-                  <div className="carousel-item-info">Item 4</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item2} />
-                  </div>
-                  <div className="carousel-item-info">Item 5</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item6} />
-                  </div>
-                  <div className="carousel-item-info">Item 6</div>
-                </div>
-              </div>
-              <button
-                className="carousel-button"
-                id="right-button"
-                onClick={() => handleCarouselNav(newInCarouselRef, "right")}
-              >
-                Right
-              </button>
-            </div>
-          </div>
-        </section>
         <section className="trending-section">
-          <div className="content-wrapper">
-            <h1>Trending</h1>
+          <h1>Trending</h1>
 
+          <div className="trending-carousel">
+            <button
+              className="carousel-button"
+              id="left-button"
+              onClick={() => handleCarouselNav(trendingCarouselRef, "left")}
+            >
+              Left
+            </button>
             <div
-              className="trending-carousel-container"
+              className="trending-carousel-card-container"
               ref={trendingCarouselRef}
             >
-              <button
-                className="carousel-button"
-                id="left-button"
-                onClick={() => handleCarouselNav(trendingCarouselRef, "left")}
-              >
-                Left
-              </button>
-              <div className="trending-carousel">
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item3} />
-                  </div>
-                  <div className="carousel-item-info">Item 1</div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item1} />
                 </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item6} />
-                  </div>
-                  <div className="carousel-item-info">Item 2</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item2} />
-                  </div>
-                  <div className="carousel-item-info">Item 3</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item1} />
-                  </div>
-                  <div className="carousel-item-info">Item 4</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item3} />
-                  </div>
-                  <div className="carousel-item-info">Item 5</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img">
-                    <img src={item5} />
-                  </div>
-                  <div className="carousel-item-info">Item 6</div>
-                </div>
+                <div className="carousel-card-info">Item 1</div>
               </div>
-              <button
-                className="carousel-button"
-                id="right-button"
-                onClick={() => handleCarouselNav(trendingCarouselRef, "right")}
-              >
-                Right
-              </button>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item2} />
+                </div>
+                <div className="carousel-card-info">Item 2</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item3} />
+                </div>
+                <div className="carousel-card-info">Item 3</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item5} />
+                </div>
+                <div className="carousel-card-info">Item 4</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item2} />
+                </div>
+                <div className="carousel-card-info">Item 5</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item6} />
+                </div>
+                <div className="carousel-card-info">Item 6</div>
+              </div>
             </div>
+            <button
+              className="carousel-button"
+              id="right-button"
+              onClick={() => handleCarouselNav(trendingCarouselRef, "right")}
+            >
+              Right
+            </button>
           </div>
         </section>
         <section className="recently-viewed-section">
-          <div className="content-wrapper">
-            <h1>Recently Viewed</h1>
+          <h1>Recently Viewed</h1>
+
+          <div className="recently-viewed-carousel">
+            <button
+              className="carousel-button"
+              id="left-button"
+              onClick={() => handleCarouselNav(recentlyViewedCarouselRef, "left")}
+            >
+              Left
+            </button>
             <div
-              className="recently-viewed-carousel-container"
+              className="recently-viewed-carousel-card-container"
               ref={recentlyViewedCarouselRef}
             >
-              <button
-                className="carousel-button"
-                id="left-button"
-                onClick={() =>
-                  handleCarouselNav(recentlyViewedCarouselRef, "left")
-                }
-              >
-                Left
-              </button>
-              <div className="recently-viewed-carousel">
-                <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
-                  <div className="carousel-item-info">Item 1</div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item1} />
                 </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
-                  <div className="carousel-item-info">Item 2</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
-                  <div className="carousel-item-info">Item 3</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
-                  <div className="carousel-item-info">Item 4</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
-                  <div className="carousel-item-info">Item 5</div>
-                </div>
-                <div className="carousel-item">
-                  <div className="carousel-item-img"></div>
-                  <div className="carousel-item-info">Item 6</div>
-                </div>
+                <div className="carousel-card-info">Item 1</div>
               </div>
-              <button
-                className="carousel-button"
-                id="right-button"
-                onClick={() =>
-                  handleCarouselNav(recentlyViewedCarouselRef, "right")
-                }
-              >
-                Right
-              </button>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item2} />
+                </div>
+                <div className="carousel-card-info">Item 2</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item3} />
+                </div>
+                <div className="carousel-card-info">Item 3</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item5} />
+                </div>
+                <div className="carousel-card-info">Item 4</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item2} />
+                </div>
+                <div className="carousel-card-info">Item 5</div>
+              </div>
+              <div className="carousel-card">
+                <div className="carousel-card-img">
+                  <img src={item6} />
+                </div>
+                <div className="carousel-card-info">Item 6</div>
+              </div>
             </div>
+            <button
+              className="carousel-button"
+              id="right-button"
+              onClick={() => handleCarouselNav(recentlyViewedCarouselRef, "right")}
+            >
+              Right
+            </button>
           </div>
-        </section> */}
+        </section>
+        
         <footer className="footer">Footer</footer>
       </main>
     </div>

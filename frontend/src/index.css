@@ -84,14 +84,14 @@
   padding: 50px 100px;
 }
 
-.new-in-carousel {
+.new-in-carousel, .trending-carousel, .recently-viewed-carousel  {
   display: flex;
   position: relative;
   align-items: center;
   max-width: 100%;
 }
 
-.new-in-carousel-card-container {
+.new-in-carousel-card-container, .trending-carousel-card-container, .recently-viewed-carousel-card-container  {
   display: flex;
   flex-direction: row;
   max-width: 1400px;
@@ -99,15 +99,9 @@
   scroll-behavior: smooth;
   overflow: hidden;
   padding: 20px;
-  gap: 50px;
+  gap: 40px;
   height: 500px;
 }
-/* .new-in-carousel-card-container {
-  display: flex;
-  padding: 20px;
-  gap: 50px;
-  height: 500px;
-} */
 
 .carousel-card {
   width: 350px;
