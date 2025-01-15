@@ -30,3 +30,19 @@
 .language-options-menu {
   padding: 10px;
 }
+
+
+.basket-quantitiy-icon {
+    position: absolute;
+    font-size: 0.75rem;
+    top: 40px;
+    right: 35px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    align-content: center;
+}
+

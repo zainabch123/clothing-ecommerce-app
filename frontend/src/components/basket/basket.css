@@ -19,7 +19,7 @@
 
 .basket-product-list li {
   display: grid;
-  grid-template-columns: 80px 1fr 50px;
+  grid-template-columns: 80px 1fr 80px 50px;
   height: 100%;
   padding: 7px;
   margin: 0px 0px 20px 0px;
@@ -32,6 +32,7 @@
 
 .basket-product-list li p {
       padding: 5px;
+      text-align: center;
 }
 
 

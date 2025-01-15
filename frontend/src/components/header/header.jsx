@@ -48,6 +48,7 @@ function Header({ basket }) {
         <li className="basket-icon" style={{ color: "black" }} onClick={handleOnClickBasket}>
           <BasketIcon />
         </li>
+        <div className="basket-quantitiy-icon">{basket.length}</div>
       </ul>
 
       {isBasketVisible && (

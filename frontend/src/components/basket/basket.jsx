@@ -10,6 +10,7 @@ function Basket({basket}) {
               <li key={index}>
                 <img src={product.imageSrc}/>
                 <h3>{product.name}</h3>
+                <p>Quantity: 1</p>
                 <p>£{product.price.toFixed(2)}</p>
               </li>
             );
