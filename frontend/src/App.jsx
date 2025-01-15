@@ -6,7 +6,16 @@ import Trending from "./components/trending/trending.jsx";
 import RecentlyViewed from "./components/recentlyViewed/recentlyViewed.jsx";
 import Footer from "./components/footer/footer.jsx";
 
+import { useState } from "react";
+
 function App() {
+  const [basket, setBasket] = useState([]);
+
+  const handleAddToBasket = (product) => {
+    setBasket([...basket, product]);
+  };
+
+  console.log(basket);
 
   const handleCarouselNav = (carouselRef, direction) => {
     const scrollAmount = direction === "left" ? -760 : 760;
@@ -19,9 +28,18 @@ function App() {
       <NavBar />
       <main className="overflow-container">
         <HeroImg />
-        <NewIn handleCarouselNav={handleCarouselNav} />
-        <Trending handleCarouselNav={handleCarouselNav}/>
-        <RecentlyViewed  handleCarouselNav={handleCarouselNav} />
+        <NewIn
+          handleCarouselNav={handleCarouselNav}
+          handleAddToBasket={handleAddToBasket}
+        />
+        <Trending
+          handleCarouselNav={handleCarouselNav}
+          handleAddToBasket={handleAddToBasket}
+        />
+        <RecentlyViewed
+          handleCarouselNav={handleCarouselNav}
+          handleAddToBasket={handleAddToBasket}
+        />
         <Footer />
       </main>
     </div>

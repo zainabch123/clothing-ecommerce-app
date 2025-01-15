@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./carouselCard.css";
 
-function CarouselCard({ product }) {
+function CarouselCard({ product, handleAddToBasket }) {
+
   return (
     <li className="carousel-card">
       <div className="carousel-card-img">
@@ -12,7 +14,14 @@ function CarouselCard({ product }) {
         <p>£{product.price.toFixed(2)}</p>
       </div>
       <div className="carousel-card-button">
-        <button className="add-to-bag-button">Add To Bag</button>
+        <button
+          className="add-to-basket-button"
+          onClick={() => {
+            handleAddToBasket(product);
+          }}
+        >
+          Add To Bag
+        </button>
       </div>
     </li>
   );

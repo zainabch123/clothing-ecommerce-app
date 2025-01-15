@@ -3,7 +3,7 @@ import productImages from "../../data/productInfo";
 import CarouselCard from "../carouselCard/carouselCard";
 import CarouselButton from "../carouselButton/carouselButton";
 
-function NewIn({ handleCarouselNav }) {
+function NewIn({ handleCarouselNav, handleAddToBasket }) {
   const newInCarouselRef = useRef(null);
 
   return (
@@ -14,11 +14,17 @@ function NewIn({ handleCarouselNav }) {
         <CarouselButton
           direction={"left"}
           handleCarouselNav={handleCarouselNav}
-          carouselRef={newInCarouselRef}
+          carouselRef={newInCarouselRef} 
         />
         <ul className="new-in-carousel-card-container" ref={newInCarouselRef}>
           {productImages.map((product, index) => {
-            return <CarouselCard key={index} product={product} />;
+            return (
+              <CarouselCard
+                key={index}
+                product={product}
+                handleAddToBasket={handleAddToBasket}
+              />
+            );
           })}
         </ul>
         <CarouselButton
