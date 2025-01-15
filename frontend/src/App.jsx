@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
+      <Header basket={basket}/>
       <NavBar />
       <main className="overflow-container">
         <HeroImg />

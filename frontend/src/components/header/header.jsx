@@ -3,11 +3,12 @@ import GloLogo from "../../assets/icons/gloLogo.jsx";
 import ProfileIcon from "../../assets/icons/profileIcon.jsx";
 import SearchIcon from "../../assets/icons/searchIcon.jsx";
 import FavouritesIcon from "../../assets/icons/favouritesIcon.jsx";
-import BagIcon from "../../assets/icons/bagIcon.jsx";
+import BasketIcon from "../../assets/icons/basketIcon.jsx";
+import Basket from "../basket/basket.jsx";
 
 import "./header.css";
 
-function Header() {
+function Header({ basket }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleOnClickLogin = (event) => {
@@ -38,10 +39,12 @@ function Header() {
         <li className="favourites-icon" style={{ color: "black" }}>
           <FavouritesIcon />
         </li>
-        <li className="bag-icon" style={{ color: "black" }}>
-          <BagIcon />
+        <li className="basket-icon" style={{ color: "black" }}>
+          <BasketIcon />
         </li>
       </ul>
+
+      <Basket basket={basket} />
 
       {isVisible && (
         <div className="login-portal">

@@ -10,17 +10,6 @@
   grid-template-rows: 70px 40px 1fr;
 }
 
-.header {
-  position: relative;
-  /* background-color: #f6f4f0; */
-  background-color: rgb(235, 230, 220);
-  display: grid;
-  grid-template-columns: 200px 1fr 250px;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
-
 .overflow-container {
   background-color: white;
   overflow: scroll;
@@ -30,28 +19,6 @@
 .footer {
   background-color: white;
   border: 1px solid black;
-}
-
-.login-portal {
-  position: absolute;
-  z-index: 10;
-  top: 80px;
-  right: 10px;
-}
-
-.user-panel {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-
-.user-panel li {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.language-options-menu {
-  padding: 10px;
 }
 
 .nav-bar {
