@@ -24,7 +24,7 @@ export default [
       "react-refresh": reactRefresh,
     },
     rules: {
-      "react/prop-types": [0],
+      "react/prop-types": [<enabled/>, { ignore: <ignore/>, customValidators: <customValidator/>, skipUndeclared: <skipUndeclared/> }],
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,

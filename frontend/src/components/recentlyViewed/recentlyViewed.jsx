@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import productImages from "../../data/productImagesData";
 import CarouselCard from "../carouselCard/carouselCard";
+import CarouselButton from "../carouselButton/carouselButton";
 
 function RecentlyViewed({ handleCarouselNav }) {
   const recentlyViewedCarouselRef = useRef(null);
@@ -10,13 +11,11 @@ function RecentlyViewed({ handleCarouselNav }) {
       <h1>Recently Viewed</h1>
 
       <div className="recently-viewed-carousel">
-        <button
-          className="carousel-button"
-          id="left-button"
-          onClick={() => handleCarouselNav(recentlyViewedCarouselRef, "left")}
-        >
-          Left
-        </button>
+        <CarouselButton
+          direction={"left"}
+          handleCarouselNav={handleCarouselNav}
+          carouselRef={recentlyViewedCarouselRef}
+        />
         <ul
           className="recently-viewed-carousel-card-container"
           ref={recentlyViewedCarouselRef}
@@ -25,13 +24,11 @@ function RecentlyViewed({ handleCarouselNav }) {
             return <CarouselCard key={index} product={product} />;
           })}
         </ul>
-        <button
-          className="carousel-button"
-          id="right-button"
-          onClick={() => handleCarouselNav(recentlyViewedCarouselRef, "right")}
-        >
-          Right
-        </button>
+        <CarouselButton
+          direction={"right"}
+          handleCarouselNav={handleCarouselNav}
+          carouselRef={recentlyViewedCarouselRef}
+        />
       </div>
     </section>
   );

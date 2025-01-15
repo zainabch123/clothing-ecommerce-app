@@ -1,0 +1,21 @@
+.carousel-button {
+  position: absolute;
+  z-index: 10;
+  height: 100px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#left-button {
+  left: -100px;
+}
+
+#right-button {
+  right: -100px;
+}
+
+.carousel-button:hover {
+    background-color: lightgray;
+}

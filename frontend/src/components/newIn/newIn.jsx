@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import productImages from "../../data/productImagesData";
 import CarouselCard from "../carouselCard/carouselCard";
+import CarouselButton from "../carouselButton/carouselButton";
 
 function NewIn({ handleCarouselNav }) {
   const newInCarouselRef = useRef(null);
@@ -10,27 +11,21 @@ function NewIn({ handleCarouselNav }) {
       <h1>New In</h1>
 
       <div className="new-in-carousel">
-        <button
-          className="carousel-button"
-          id="left-button"
-          onClick={() => handleCarouselNav(newInCarouselRef, "left")}
-        >
-          Left
-        </button>
+        <CarouselButton
+          direction={"left"}
+          handleCarouselNav={handleCarouselNav}
+          carouselRef={newInCarouselRef}
+        />
         <ul className="new-in-carousel-card-container" ref={newInCarouselRef}>
           {productImages.map((product, index) => {
-            return (
-              <CarouselCard key={index} product={product} />
-            );
+            return <CarouselCard key={index} product={product} />;
           })}
         </ul>
-        <button
-          className="carousel-button"
-          id="right-button"
-          onClick={() => handleCarouselNav(newInCarouselRef, "right")}
-        >
-          Right
-        </button>
+        <CarouselButton
+          direction={"right"}
+          handleCarouselNav={handleCarouselNav}
+          carouselRef={newInCarouselRef}
+        />
       </div>
     </section>
   );

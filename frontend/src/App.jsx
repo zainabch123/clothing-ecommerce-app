@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer.jsx";
 function App() {
 
   const handleCarouselNav = (carouselRef, direction) => {
-    const scrollAmount = direction === "left" ? -720 : 720;
+    const scrollAmount = direction === "left" ? -760 : 760;
     carouselRef.current.scrollLeft += scrollAmount;
   };
 
