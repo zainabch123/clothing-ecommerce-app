@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import productImages from "../../data/productImagesData";
+import productImages from "../../data/productInfo";
 import CarouselCard from "../carouselCard/carouselCard";
 import CarouselButton from "../carouselButton/carouselButton";
 

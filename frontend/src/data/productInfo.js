@@ -8,28 +8,38 @@ const productImages = [
   {
     id: 1,
     imageSrc: item1,
-    info: "Item 1",
+    name: "Moisturizer",
+    rating: 4.5,
+    price: 32.0,
   },
   {
     id: 2,
     imageSrc: item2,
-    info: "Item 2",
+    name: "Serum",
+    rating: 4.5,
+    price: 16.0,
   },
   {
     id: 3,
     imageSrc: item3,
-    info: "Item 3",
+    name: "Serum",
+    rating: 5,
+    price: 22.0,
   },
   {
     id: 4,
     imageSrc: item4,
-    info: "Item 4",
+    name: "Serum",
+    rating: 4.3,
+    price: 22.0,
   },
   {
     id: 5,
     imageSrc: item5,
-    info: "Item 5",
-  }
+    name: "Serum Set",
+    rating: 4.5,
+    price: 45.0,
+  },
 ];
 
 export default productImages;

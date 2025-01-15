@@ -1,0 +1,32 @@
+.carousel-card {
+  width: 350px;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  display: grid;
+  grid-template-rows: 400px auto 60px;
+  border-radius: 20px;
+}
+
+.carousel-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.carousel-card-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-card-button {
+    padding: 0px 10px 10px 10px;
+}
+
+.add-to-bag-button {
+  width: 140px;
+  height: 80%;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+}
