@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import productImages from "../../data/productImagesData";
+import CarouselCard from "../carouselCard/carouselCard";
 
 function RecentlyViewed({ handleCarouselNav }) {
   const recentlyViewedCarouselRef = useRef(null);
@@ -21,14 +22,7 @@ function RecentlyViewed({ handleCarouselNav }) {
           ref={recentlyViewedCarouselRef}
         >
           {productImages.map((product, index) => {
-            return (
-              <li key={index} className="carousel-card">
-                <div className="carousel-card-img">
-                  <img src={product.imageSrc} />
-                </div>
-                <div className="carousel-card-info">{product.info}</div>
-              </li>
-            );
+            return <CarouselCard key={index} product={product} />;
           })}
         </ul>
         <button

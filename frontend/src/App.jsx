@@ -1,5 +1,3 @@
-import { useState, useRef } from "react";
-
 import Header from "./components/header/header.jsx";
 import NavBar from "./components/navBar/navBar.jsx";
 import HeroImg from "./components/heroImg/heroImg.jsx";
@@ -11,7 +9,7 @@ import Footer from "./components/footer/footer.jsx";
 function App() {
 
   const handleCarouselNav = (carouselRef, direction) => {
-    const scrollAmount = direction === "left" ? -400 : 400;
+    const scrollAmount = direction === "left" ? -720 : 720;
     carouselRef.current.scrollLeft += scrollAmount;
   };
 
