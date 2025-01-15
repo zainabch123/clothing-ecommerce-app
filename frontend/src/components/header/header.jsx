@@ -9,11 +9,17 @@ import Basket from "../basket/basket.jsx";
 import "./header.css";
 
 function Header({ basket }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isLoginVisible, setIsLoginVisible] = useState(false);
+  const [isBasketVisible, setIsBasketVisible] = useState(false);
+    
 
   const handleOnClickLogin = (event) => {
-    setIsVisible(!isVisible);
+    setIsLoginVisible(!isLoginVisible);
   };
+
+  const handleOnClickBasket = (event) => {
+    setIsBasketVisible(!isBasketVisible);
+  }
 
   return (
     <header className="header">
@@ -39,14 +45,16 @@ function Header({ basket }) {
         <li className="favourites-icon" style={{ color: "black" }}>
           <FavouritesIcon />
         </li>
-        <li className="basket-icon" style={{ color: "black" }}>
+        <li className="basket-icon" style={{ color: "black" }} onClick={handleOnClickBasket}>
           <BasketIcon />
         </li>
       </ul>
 
+      {isBasketVisible && (
       <Basket basket={basket} />
+      )}
 
-      {isVisible && (
+      {isLoginVisible && (
         <div className="login-portal">
           <form>
             <label htmlFor="email">
