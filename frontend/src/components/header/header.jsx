@@ -11,7 +11,6 @@ import "./header.css";
 function Header({ basket }) {
   const [isLoginVisible, setIsLoginVisible] = useState(false);
   const [isBasketVisible, setIsBasketVisible] = useState(false);
-    
 
   const handleOnClickLogin = (event) => {
     setIsLoginVisible(!isLoginVisible);
@@ -19,7 +18,7 @@ function Header({ basket }) {
 
   const handleOnClickBasket = (event) => {
     setIsBasketVisible(!isBasketVisible);
-  }
+  };
 
   return (
     <header className="header">
@@ -45,15 +44,17 @@ function Header({ basket }) {
         <li className="favourites-icon" style={{ color: "black" }}>
           <FavouritesIcon />
         </li>
-        <li className="basket-icon" style={{ color: "black" }} onClick={handleOnClickBasket}>
+        <li
+          className="basket-icon"
+          style={{ color: "black" }}
+          onClick={handleOnClickBasket}
+        >
           <BasketIcon />
         </li>
         <div className="basket-quantitiy-icon">{basket.length}</div>
       </ul>
 
-      {isBasketVisible && (
-      <Basket basket={basket} />
-      )}
+      {isBasketVisible && <Basket basket={basket} />}
 
       {isLoginVisible && (
         <div className="login-portal">
