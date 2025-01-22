@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./carouselCard.css";
 
 function CarouselCard({ product, handleAddToBasket }) {
-
   return (
     <li className="carousel-card">
       <div className="carousel-card-img">

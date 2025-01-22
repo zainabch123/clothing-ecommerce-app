@@ -14,7 +14,7 @@ function NewIn({ handleCarouselNav, handleAddToBasket }) {
         <CarouselButton
           direction={"left"}
           handleCarouselNav={handleCarouselNav}
-          carouselRef={newInCarouselRef} 
+          carouselRef={newInCarouselRef}
         />
         <ul className="new-in-carousel-card-container" ref={newInCarouselRef}>
           {productImages.map((product, index) => {
