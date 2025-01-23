@@ -1,7 +1,9 @@
-import { useRef } from "react";
 import productImages from "../../data/productInfo";
 import CarouselCard from "../carouselCard/carouselCard";
 import CarouselButton from "../carouselButton/carouselButton";
+
+import { useRef } from "react";
+
 
 function NewIn({ handleCarouselNav, handleAddToBasket }) {
   const newInCarouselRef = useRef(null);

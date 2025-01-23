@@ -9,7 +9,7 @@ const productImages = [
     id: 1,
     imageSrc: item1,
     name: "Moisturizer",
-    rating: 4.5,
+    rating: 4.2,
     price: 32.0,
   },
   {
